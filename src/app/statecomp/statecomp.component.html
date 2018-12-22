@@ -1,0 +1,5 @@
+<div  *ngIf='appStates.length > 0'>
+  Select State :  <select>
+    <option value="{{state}}"  *ngFor='let state of appStates' >{{state}}</option>
+  </select>
+</div>

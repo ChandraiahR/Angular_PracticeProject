@@ -1,0 +1,93 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+ </div>
+
+ <button (click)='getAllUsers()'>Get Users</button> {{listUsers}}
+<!-- <h2>Here are some links to help you start: {{sample}} </h2>
+<div></div>
+
+<div> -->
+      <!-- <input  [(ngModel)]='myName'/> <span  *ngIf="isValidUser()">Is value is required</span>
+      <input  [(ngModel)]='myName'/> <span  [ngClass] ="{show : isValidUser()}" >Is value is required</span> -->
+      <input  [(ngModel)]='myName'/> <span  [ngClass] ="{show:true}" >Is value is required</span>
+
+<!-- </div>
+
+<input name = 'Chandu' (clicked) = 'handleObj($event)'/>
+
+<ul>
+<li *ngFor= 'let obj of cards'>
+  {{obj.title}}  - {{obj.desc}} - {{obj.info}}
+</li></ul>
+
+<h1>Added cards -- {{addedCard}}</h1>
+
+<h1></h1> -->
+
+<app-testcomp></app-testcomp>
+
+<h1></h1>
+<h1></h1>
+
+<h1></h1>
+<h1></h1>
+<app-countrycomp [countryData] = "appcuntry" (onCountrychange) ='onCountryChange($event)'></app-countrycomp>
+<app-statecomp [appStates]="appStates"></app-statecomp>
+
+<app-content-directive>
+      <p>Do you whant to delete ? </p>
+      <button>YES</button>
+      <button>NO</button>
+</app-content-directive>
+
+
+
+<p appClassDirective>Highlight me!</p>
+
+
+
+<h1></h1>
+
+
+<app-listcomp [data] = "addToCards" className="bg-dark" typeOfcard="Remove From Card"  (buttonClicked)="removeCart($event)"></app-listcomp>
+
+<h1></h1>
+<app-listcomp [data] = "cards" className="bg-light" typeOfcard="Add to Card" (buttonClicked)="addToCard($event)"></app-listcomp>
+<h1></h1>
+
+<app-cardcomp></app-cardcomp>
+
+<!-- <div class="card" style="width: 18rem;display: inline-block;" *ngFor= 'let obj of addToCards'>
+  <div >
+    <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_167a2c4f736%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_167a2c4f736%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.1953125%22%20y%3D%2296.2390625%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{obj.title}}</h5>
+      <p class="card-text">{{obj.desc}}</p>
+      <a href="javascript:void(0)" (click)="addToCard(obj)" class="btn btn-primary">{{obj.info}}</a>
+    </div>
+  </div>
+  
+  </div>
+
+  <h1></h1>
+
+
+<div class="card" style="width: 18rem;display: inline-block;" *ngFor= 'let obj of cards'>
+  <div >
+    <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_167a2c4f736%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_167a2c4f736%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.1953125%22%20y%3D%2296.2390625%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{obj.title}}</h5>
+      <p class="card-text">{{obj.desc}}</p>
+      <a href="javascript:void(0)" (click)="addToCard(obj)" class="btn btn-primary">{{obj.info}}</a>
+    </div>
+  </div>
+  
+  </div> -->
+
+
+
+<div>{{myName}}</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,18 @@
+<p>
+  <input #empName>
+  <!-- Using @ViewChild -->
+  <button (click)='hadleValue()'>Check View Child</button>
+  <!-- refference-->
+  <button (click)='hadleValueRef(empName)'>Check Val  Reffrence</button>
+</p>
+Select Country : <select (change) = "findStates($event)">
+  <option value="{{cunt}}"  *ngFor='let cunt of cuntry' >{{cunt}}</option>
+</select>
+{{states.length > 0}}
+<div  *ngIf='states.length > 0'>
+  Select State :  <select>
+    <option value="{{state}}"  *ngFor='let state of states' >{{state}}</option>
+  </select>
+</div>
+<!-- <select id="countries_states1" class="input-medium bfh-countries" data-country="US"></select>
+<select class="input-medium bfh-states" data-country="countries_states1"></select> -->
